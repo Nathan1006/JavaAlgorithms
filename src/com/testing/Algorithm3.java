@@ -19,12 +19,12 @@ public class Algorithm3 {
     public static int Alg3 (String time) {
         String[] myArray = time.split(":");
         int[] newArray = new int[2];
-        int seconds = 0;
+        int seconds;
 
         for (int i = 0; i < myArray.length; i++) {
             newArray[i] = Integer.parseInt(myArray[i]);
         }
-        if (newArray[1] == 60) {
+        if (newArray[1] >= 60) {
             System.out.println("-1");
             return -1;
         } else {
