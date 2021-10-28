@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Algorithm3.Alg3("01:00");
+        Algorithm6.Alg6("loop");
     }
 }

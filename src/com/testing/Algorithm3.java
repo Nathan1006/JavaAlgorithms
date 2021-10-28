@@ -16,7 +16,7 @@ You may get a number of minutes over 99 (e.g. "121:49" is perfectly valid).
 */
 
 public class Algorithm3 {
-    public static int Alg3 (String time) {
+    public static int Alg3(String time) {
         String[] myArray = time.split(":");
         int[] newArray = new int[2];
         int seconds;

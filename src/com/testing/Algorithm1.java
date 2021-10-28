@@ -17,7 +17,7 @@ All test cases are one word and only contain letters.
 
 public class Algorithm1 {
 
-    public static int Alg1 (String str) {
+    public static int Alg1(String str) {
         int vowelsCount = 0;
         String word = str;
         // Your code here
