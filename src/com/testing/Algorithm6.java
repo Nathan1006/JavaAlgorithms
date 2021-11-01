@@ -1,21 +1,29 @@
 package com.testing;
+//https://edabit.com/challenge/EaWY5d2pYBckrkAnS
+/*
+Create a function that takes a word and returns true if the word has two consecutive identical letters.
 
+Examples
+doubleLetters("loop") ➞ true
+
+doubleLetters("yummy") ➞ true
+
+doubleLetters("orange") ➞ false
+
+doubleLetters("munchkin") ➞ false
+*/
 public class Algorithm6 {
     public static boolean Alg6 (String word) {
         String[] myArray = word.split("");
-        String letter = "";
-        boolean tOrf = false;
 
         for (int i = 0; i < myArray.length; i++) {
-            if (myArray[i] == letter){
-                tOrf = true;
-                return tOrf;
+            if (myArray[i] == myArray[i + 1]){
+                return true;
             }
-            letter = myArray[i];
         }
 
         //String myString = String.join("", myArray);
-        System.out.println(myArray[3]);
-        return tOrf;
+        System.out.println();
+        return false;
     }
 }
