@@ -25,16 +25,15 @@ import java.util.Arrays;
 public class Algorithm5 {
     public static int[] Alg5 (int[] nums) {
         int[] myArray = new int[nums.length];
-        int myNum = nums[0];
+        int number = nums[0];
 
         for (int i = 0; i < myArray.length; i++) {
             for (int j = 0; j < nums.length; j++) {
-                myNum = nums[j];
-                if (nums[j] < myNum) {
-                    //myNum = nums
+                if (nums[j] < number) {
+                    number = nums[j];
                 }
             }
-            myArray[i] = nums[i];
+            myArray[i] = number;
         }
 
         System.out.println(Arrays.toString(myArray));

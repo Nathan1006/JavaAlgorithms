@@ -15,15 +15,22 @@ doubleLetters("munchkin") ➞ false
 public class Algorithm6 {
     public static boolean Alg6 (String word) {
         String[] myArray = word.split("");
+        int counter = 0;
+        String letter = "";
 
         for (int i = 0; i < myArray.length; i++) {
-            if (myArray[i] == myArray[i + 1]){
-                return true;
+            if (myArray[i].equals(letter)){
+                counter++;
             }
+            letter = myArray[i];
         }
 
-        //String myString = String.join("", myArray);
-        System.out.println();
-        return false;
+        if (counter == 1){
+            System.out.println("true");
+            return true;
+        } else {
+            System.out.println("false");
+            return false;
+        }
     }
 }
