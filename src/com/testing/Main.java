@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Algorithm7.Alg7(7, 5);
+        Algorithm8.Alg8("rock", "paper");
     }
 }
