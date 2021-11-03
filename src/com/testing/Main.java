@@ -4,8 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Review.minutesToSeconds("13:56");
-        Review.minutesToSeconds("01:00");
-        Review.minutesToSeconds("10:60");
+        Algorithm11.Alg11(new int[] {13, 3, 8, 5, 5, 2, 13, 6, 14, 2, 11, 4, 10, 8, 1, 9});
     }
 }
