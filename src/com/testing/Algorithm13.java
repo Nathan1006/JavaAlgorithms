@@ -30,13 +30,13 @@ public class Algorithm13 {
         String[] Ending = words[lastIndex].split("");
 
         for (int i = 0; i < Ending.length; i++) {
-            if (Ending[i].equals("!")){
+            if (Ending[i].equals("!") || Ending[i].equals("?")){
                 words[lastIndex] = String.join("", Ending).substring(0, i + 1);
                 break;
             }
             //System.out.println(Ending[i]);
         }
-
+        System.out.println(String.join(" ", words));
         return String.join(" ", words);
     }
 }
