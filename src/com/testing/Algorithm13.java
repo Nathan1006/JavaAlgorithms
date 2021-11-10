@@ -34,7 +34,6 @@ public class Algorithm13 {
                 words[lastIndex] = String.join("", Ending).substring(0, i + 1);
                 break;
             }
-            //System.out.println(Ending[i]);
         }
         System.out.println(String.join(" ", words));
         return String.join(" ", words);
