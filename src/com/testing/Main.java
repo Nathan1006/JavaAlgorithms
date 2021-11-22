@@ -1,9 +1,11 @@
 package com.testing;
 
+import com.testing.November22.HowManyDigits;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Algorithm15.Alg15( "July 20, 2019", "July 30, 2019");
+        HowManyDigits.numOfDigits(0);
     }
 }
