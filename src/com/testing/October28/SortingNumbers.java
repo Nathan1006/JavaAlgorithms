@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.October28;
 //https://edabit.com/challenge/WM5s7vuHnXdcKCEjS
 /*
 Create a method that takes an array of integers and returns a new array, sorted in ascending order (smallest to biggest).
@@ -22,7 +22,7 @@ Test input can be positive or negative.
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Algorithm5 {
+public class SortingNumbers {
     public static int[] Alg5 (int[] nums) {
         int[] myArray = new int[nums.length];
         int number = nums[0];

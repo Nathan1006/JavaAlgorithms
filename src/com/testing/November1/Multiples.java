@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November1;
 
 import java.util.*;
 //https://edabit.com/challenge/rzpucPyoyEtXPo2BG
@@ -15,7 +15,7 @@ Notes
 Notice that num is also included in the returned array.
 */
 
-public class Algorithm7 {
+public class Multiples {
     public static int[] Alg7 (int num, int length) {
         int[] myArray = new int[length];
         int currentNum = 0;

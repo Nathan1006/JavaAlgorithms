@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November2;
 //https://edabit.com/challenge/qSJ5hZfG52Nf2hXWS
 /*
 Given an array of integers, return the largest gap between the sorted elements of the array.
@@ -27,7 +27,7 @@ largestGap([13, 3, 8, 5, 5, 2, 13, 6, 14, 2, 11, 4, 10, 8, 1, 9]) ➞ 2
 
 import java.util.Arrays;
 
-public class Algorithm11 {
+public class LargestGap {
     public static int Alg11 (int[] numbers) {
         int gap = 0;
         int largestGap = 0;

@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November15;
 //https://edabit.com/challenge/3hdXjfJozQySRC3gE
 /*
 Create a function that takes two dates and returns the number of days between the first and second date.
@@ -23,9 +23,8 @@ getDays(
 */
 import java.text.SimpleDateFormat;
 import java.util.Date;
-public class Algorithm15 {
+public class DaysBetween {
     public static int Alg15(String date1, String date2) {
-
 
         return 0;
     }

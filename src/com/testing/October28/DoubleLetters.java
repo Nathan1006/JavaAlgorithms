@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.October28;
 //https://edabit.com/challenge/EaWY5d2pYBckrkAnS
 /*
 Create a function that takes a word and returns true if the word has two consecutive identical letters.
@@ -12,7 +12,7 @@ doubleLetters("orange") ➞ false
 
 doubleLetters("munchkin") ➞ false
 */
-public class Algorithm6 {
+public class DoubleLetters {
     public static boolean Alg6 (String word) {
         String[] myArray = word.split("");
         int counter = 0;

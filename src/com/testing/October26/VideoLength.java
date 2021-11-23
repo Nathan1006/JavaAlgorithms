@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.October26;
 //https://edabit.com/challenge/9D39q2q9yAFCDM9da
 /*
 You are given the length of a video in minutes. The format is mm:ss (e.g.: "02:54"). Create a function that takes the video length and return it in seconds.
@@ -15,7 +15,7 @@ If the number of seconds is 60 or over, return -1 (see example #3).
 You may get a number of minutes over 99 (e.g. "121:49" is perfectly valid).
 */
 
-public class Algorithm3 {
+public class VideoLength {
     public static int Alg3(String time) {
         String[] myArray = time.split(":");
         int[] newArray = new int[2];

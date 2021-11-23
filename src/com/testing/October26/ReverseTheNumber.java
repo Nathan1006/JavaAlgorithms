@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.October26;
 //https://edabit.com/challenge/tiyPFonvAJ8e6H9jS
 
 /*
@@ -17,7 +17,7 @@ If the number is negative, treat it like it's positive.
 
 import java.util.Arrays;
 
-public class Algorithm2 {
+public class ReverseTheNumber {
 
     public static String Alg2(int n) {
         String myNum = String.valueOf(Math.abs(n));

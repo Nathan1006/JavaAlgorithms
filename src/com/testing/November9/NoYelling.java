@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November9;
 
 import java.util.Arrays;
 
@@ -23,7 +23,7 @@ Only change ending punctuation - keep the exclamation marks or question marks in
 Don't worry about mixed punctuation (no cases that end in something like ?!??!).
 Keep sentences that do not have question/exclamation marks the same.
 */
-public class Algorithm13 {
+public class NoYelling {
     public static String Alg13(String phrase) {
         String[] words = phrase.split(" ");
         int lastIndex = words.length - 1;

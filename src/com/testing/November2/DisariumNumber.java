@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November2;
 //https://edabit.com/challenge/GjCgCugvh4eorPmgM
 /*
 A number is said to be Disarium if the sum of its digits raised to their respective positions is the number itself.
@@ -25,7 +25,7 @@ Notes
 Position of the digit is 1-indexed.
 */
 
-public class Algorithm10 {
+public class DisariumNumber {
     public static boolean Alg10(int n) {
         int total = 0;
         String number = Integer.toString(n);

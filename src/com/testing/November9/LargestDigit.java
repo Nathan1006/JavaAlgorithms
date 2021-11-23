@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November9;
 // https://edabit.com/challenge/9X8zLpBEcQsyerPgL
 /*
 Create a function that takes a number as an argument and returns the highest digit in that number.
@@ -17,7 +17,7 @@ Notes
 Don't forget to return the result.
 */
 
-public class Algorithm12 {
+public class LargestDigit {
     public static int Alg12(int n) {
         int largestDigit = 0;
         String number = Integer.toString(n);

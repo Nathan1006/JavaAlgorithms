@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November2;
 //https://edabit.com/challenge/rYD9NTBmNhaPM6wx2
 /*
 Write a function that returns true if two rooks can attack each other, and false otherwise.
@@ -15,7 +15,7 @@ Notes
 Assume no blocking pieces.
 Two rooks can attack each other if they share the same row (letter) or column (number).
 */
-public class Algorithm9 {
+public class CaptureTheRook {
     public static boolean Alg9(String[] rooks) {
         String rook1 = rooks[0];
         String rook2 = rooks[1];

@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.October28;
 //https://edabit.com/challenge/hymPkXdhmDQLe87QT
 /*
 Create a function that takes an array and returns the difference between the biggest and smallest numbers.
@@ -11,7 +11,7 @@ differenceMaxMin([44, 32, 86, 19]) ➞ 67
 // Smallest number is 19, biggest is 86.
 */
 
-public class Algorithm4 {
+public class DifferenceOfTwo {
     public static int Alg4(int[] arr) {
         int difference = 0;
         int max = 0;

@@ -1,5 +1,7 @@
 package com.testing;
 
+// Use this when live coding for review
+
 public class Review {
     public static int minutesToSeconds(String tm) {
         String[] myString = tm.split(":");

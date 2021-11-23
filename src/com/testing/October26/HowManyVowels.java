@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.October26;
 //https://edabit.com/challenge/GBKphScsmDi9ek3ra
 
 /*
@@ -15,7 +15,7 @@ a, e, i, o, u are considered vowels (not y).
 All test cases are one word and only contain letters.
 */
 
-public class Algorithm1 {
+public class HowManyVowels {
 
     public static int Alg1(String str) {
         int vowelsCount = 0;

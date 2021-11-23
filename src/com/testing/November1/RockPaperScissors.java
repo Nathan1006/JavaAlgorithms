@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November1;
 //https://edabit.com/challenge/3S8XppR6Yf5mXPxij
 /*
 Create a function which simulates the game "rock, paper, scissors". The function takes the input of both players (rock, paper or scissors), first parameter from first player, second from second player. The function returns the result as such:
@@ -22,7 +22,7 @@ rps("scissors", "scissors") ➞ "TIE"
 rps("scissors", "paper") ➞ "Player 1 wins"
 */
 
-public class Algorithm8 {
+public class RockPaperScissors {
     public static String Alg8(String s1, String s2) {
         String p1Wins = "Player 1 wins";
         String p2Wins = "Player 2 wins";

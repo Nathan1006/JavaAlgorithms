@@ -1,4 +1,4 @@
-package com.testing;
+package com.testing.November15;
 //https://edabit.com/challenge/b7iHQDw72zzkmgCun
 /*
 A boomerang is a V-shaped sequence that is either upright or upside down. Specifically, a boomerang can be defined as: sub-array of length 3, with the first and last digits being the same and the middle digit being different.
@@ -26,7 +26,7 @@ Notes
 [5, 5, 5] (triple identical digits) is NOT considered a boomerang because the middle digit is identical to the first and last.
 */
 
-public class Algorithm14 {
+public class Boomerangs {
     public static int Alg14(int[] numbers) {
         int numOfBoomerangs = 0;
 
