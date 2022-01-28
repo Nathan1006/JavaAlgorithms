@@ -1,4 +1,4 @@
-package com.testing.Others;
+package com.testing.HackerRank.Others;
 
 import java.util.Stack;
 
@@ -46,6 +46,7 @@ public class BalancedBrackets {
             System.out.println("yes");
             return "YES";
         }
+
         return "NO";
     }
 }
