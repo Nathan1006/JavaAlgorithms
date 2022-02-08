@@ -28,10 +28,16 @@ public class ContainerOfBalls {
             ContainerCapacities.add(capacity);
         }
 
-
         System.out.println(ContainerCapacities);
         System.out.println(numOfBalls);
 
+        for (int i = 0; i < numOfBalls.size(); i++) {
+            for (int j = 0; j < ContainerCapacities.size(); j++) {
+                if (numOfBalls.get(i) < ContainerCapacities.get(j)) {
+                    return "NOT POSSIBLE";
+                }
+            }
+        }
         return "POSSIBLE";
     }
 
