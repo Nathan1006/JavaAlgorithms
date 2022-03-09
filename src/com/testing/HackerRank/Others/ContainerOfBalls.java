@@ -9,7 +9,7 @@ import java.util.List;
 public class ContainerOfBalls {
     public static String organizingContainers(List<List<Integer>> container) {
         // Write your code here
-        HashMap<Integer, Integer> numOfBalls = new HashMap<Integer, Integer>(); //total number of each type/color of ball
+        HashMap<Integer, Integer> numOfBalls = new HashMap<>(); //total number of each type/color of ball
         List<Integer> ContainerCapacities = new ArrayList<>();
 
         System.out.println(container);
@@ -27,10 +27,8 @@ public class ContainerOfBalls {
             }
             ContainerCapacities.add(capacity);
         }
-
         System.out.println(ContainerCapacities);
         System.out.println(numOfBalls);
-
         for (int i = 0; i < numOfBalls.size(); i++) {
             for (int j = 0; j < ContainerCapacities.size(); j++) {
                 if (numOfBalls.get(i) < ContainerCapacities.get(j)) {
