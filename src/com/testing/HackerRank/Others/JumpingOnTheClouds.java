@@ -23,32 +23,6 @@ public class JumpingOnTheClouds {
         } while (cloudsleft != 0);
 
         return energy;
-
-//        //stated with wrong algorithm
-//        int jumps = 0;
-//        int numOfZeros = 0;
-//
-//        System.out.println(c);
-//
-//        for (int i = 0; i < c.size(); i++) {
-//            numOfZeros++;
-//            switch (c.get(i)) {
-//                case 0:
-//                    if (numOfZeros == 3) {
-//                        numOfZeros = 0;
-//                        jumps++;
-//                    }
-//                case 1:
-//                    if (numOfZeros == 2) {
-//                        jumps++;
-//                    }
-//                    i++;
-//                    jumps++;
-//                    numOfZeros = 0;
-//            }
-//        }
-//
-//        return jumps;
     }
 
     public static void main(String[] args) {
