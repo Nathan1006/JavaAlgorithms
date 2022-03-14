@@ -6,15 +6,23 @@ public class JumpOnCloudsOriginal {
     public static int jumpingOnClouds(List<Integer> c) {
         // Write your code here
         int jumps = 0;
+        int i = 0;
 
-
+        while (i < c.size() - 1) {
+            if ((i + 2) < c.size() && c.get(i + 2) == 0) { //for skipping either 2 zeros or jumping over a 1
+                i+=2;
+            } else {
+                i++;
+            }
+            jumps++;
+        }
 
         return jumps;
     }
 
     public static void main(String[] args) {
 
-        System.out.println(jumpingOnClouds(List.of(0, 0, 1, 0, 0, 1, 0)));
+        System.out.println(jumpingOnClouds(List.of(0, 1, 0)));
 
     }
 //                           //old code - 3/9 test cases
