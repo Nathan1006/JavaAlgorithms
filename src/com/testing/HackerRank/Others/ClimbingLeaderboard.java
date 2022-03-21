@@ -23,7 +23,28 @@ public class ClimbingLeaderboard {
             newRanks.add(rank);
         }
 
-
+//        List<Integer> newRanks = new ArrayList<>();  /// Old code
+//
+//        for (Integer score : player) {
+//            int rank = 1;
+//            for (int i = 1; i < ranked.size(); i++) {
+//                if (score < ranked.get(ranked.size() - 1)) {
+//                    rank = ranked.size() - 1;
+//                    break;
+//                } else if (score < ranked.get(i - 1) && score > ranked.get(i)) {
+//                    rank = i - 1;
+//                    break;
+//                } else if (score < ranked.get(i)) {
+//                    rank = i + 1;
+//                } else if (score.equals(ranked.get(i))) {
+//                    rank = i + 1;
+//                    break;
+//                }
+//            }
+//            newRanks.add(rank);
+//        }
+//
+//        return newRanks;
 
 
         return newRanks;
