@@ -10,17 +10,15 @@ public class ClimbingLeaderboard {
         List<Integer> newRanks = new ArrayList<>();
 
         for (Integer score : player) {
-            int rank = 1;
-            for (int i = 1; i < ranked.size(); i++) {
-                if (score < ranked.get(i)) {
+            if (score > ranked.get(0)) {
+                newRanks.add(1);
+            } else {
+                int rank = 1;
+                for (int i = 1; i < ranked.size(); i++) {
 
                 }
-                rank++;
-                if (ranked.get(i) == ranked.get(i-1)) {
-                    rank--;
-                }
+                newRanks.add(rank);
             }
-            newRanks.add(rank);
         }
 
 //        List<Integer> newRanks = new ArrayList<>();  /// Old code
