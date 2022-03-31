@@ -1,6 +1,7 @@
 package com.testing.HackerRank.Others;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -8,42 +9,30 @@ public class ClimbingLeaderboard {
     public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
         // Write your code here
         List<Integer> newRanks = new ArrayList<>();
+        List<Integer> leaderboard = new ArrayList<>();
 
-        for (Integer score : player) {
-            if (score > ranked.get(0)) {
-                newRanks.add(1);
-            } else {
-                int rank = 1;
-                for (int i = 1; i < ranked.size(); i++) {
-
-                }
-                newRanks.add(rank);
+        for (int i = 0; i < ranked.size() - 1; i++) {
+            if (ranked.get(i) != ranked.get(i+1)) {
+                leaderboard.add(ranked.get(i));
             }
         }
+        leaderboard.add(ranked.get(ranked.size()-1));
+        Collections.sort(leaderboard);
 
-//        List<Integer> newRanks = new ArrayList<>();  /// Old code
-//
-//        for (Integer score : player) {
-//            int rank = 1;
-//            for (int i = 1; i < ranked.size(); i++) {
-//                if (score < ranked.get(ranked.size() - 1)) {
-//                    rank = ranked.size() - 1;
-//                    break;
-//                } else if (score < ranked.get(i - 1) && score > ranked.get(i)) {
-//                    rank = i - 1;
-//                    break;
-//                } else if (score < ranked.get(i)) {
-//                    rank = i + 1;
-//                } else if (score.equals(ranked.get(i))) {
-//                    rank = i + 1;
-//                    break;
-//                }
-//            }
-//            newRanks.add(rank);
-//        }
-//
-//        return newRanks;
+        int rank = leaderboard.size();
 
+        for (Integer score : player) {
+            for (int i = leaderboard.size() - rank; i > 1;) {
+                if (score.equals(leaderboard.get(i)) || score < leaderboard.get(i)) {
+                    rank--;
+                } else {
+                    rank--;
+                    break;
+                }
+            }
+
+            newRanks.add(rank);
+        }
 
         return newRanks;
     }
